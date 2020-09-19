@@ -72,145 +72,65 @@
     
     </header>
 
-    <main>
-        <!--The main carousel div. This must have an ID, class "carousel slide" and data-ride attribute with value "carousel"-->
-        <!--within this main div, there must be three main sections in series: carousel indicators as ordered list, carousel-inner as a div (this contains
-        the main carousel items) and then finally the carousel-control as <a> tag -->
-        <!--In short, a carousel should have:
-        1. Main carousel div
-            a. carousel indicators wrapper(the slide indication marks) - this is a <ol> tag
-            b. carousel inner(wraps all the slides) - this is a <div> tag
-                i. carousel item1 (a slide) - per slide wrapper
-                ii. carousel item2 (another slide) - per slide wrapper
-                iii. etc
-            c. carousel control arrows (draws the arrows for moving slide) this is <a> tag -->
-
-        <!--Main carousel wrapper-->
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!--carousel-indicators wrapper-->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
-
-            <!--all slides wrapper-->
-            <div class="carousel-inner">
-                <!--per slide wrapper1-->
-                <div class="carousel-item active">
-                    <!--img src="robotPic.jpg" alt="Robot" width="500" height="700" /-->
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-                    <div class="container">
-                        <div class="carousel-caption text-right">
-                            <h1 style="color:rgb(3, 4, 83); font-size: 80px;font-weight: bold;font-family: cursive;">Embedded Systems</h1>
-                            <p style="font-size: 25px; font-style: italic;">Electronics, PCB design, C/C++ coding: AVR 8-bit MCUs, 32-bit MCUs (STM32, CC13x0).</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-                        </div>
-                    </div>
+    <main class="container">
+        
+        <!-- <hr style="height:100px;border-width:0"> -->
+          <!-- Rows -->
+          <div class="row" style="margin-top: 100px;">
+            <h1 style="width: 100%; text-align: center; font-family: 'Times New Roman', Times, serif; color: midnightblue;">Embedded Systems</h1>
+          </div>
+          <hr style="height: 5px;">
+          <div class="row" style="margin-top: 30px;">
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-md-7">
+                    <h3>Blog One.</h3>
+                    <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.<br> This Point commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                  </div>
+                  <div class="col-md-5">
+                    <img src="../images/img/5.jpg" width="250" height="250"/>
+                  </div>
+                  <a href="" style="color: black;">Read more..</a>
                 </div>
-                <!--per slide wrapper2-->
-                <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-                    <div class="container">
-                        <div class="carousel-caption text-right">
-                            <h1 style="color:rgb(218, 160, 14); font-size: 80px;font-weight: bold;font-family: cursive;">Robotics and Control</h1>
-                            <p style="font-size: 25px; font-style: italic;">Robot modelling & simulation, control, robot hardware & software resources.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-                        </div>
-                    </div>
+                <hr/>
+                <div class="row">
+                  <div class="col-md-7">
+                    <h3>First featurette heading. It’ll blow your mind.</h3>
+                    <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.<br> This Point commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                  </div>
+                  <div class="col-md-5">
+                    <img src="../images/img/6.jpg" width="250" height="250"/>
+                  </div>
+                  <a href="">Read more..</a>
                 </div>
-                <!--per slide wrapper3-->
-                <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-                    <div class="container">
-                        <div class="carousel-caption text-right">
-                            <h1 style="color:rgb(3, 4, 83); font-size: 80px;font-weight: bold;font-family: cursive;">AI & Computer Vision</h1>
-                            <p style="font-size: 25px; font-style: italic;">Classical computer vision, machine learning, deep learning, AI in general.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-                        </div>
-                    </div>
+                <hr>
+                <div class="row">
+                  <div class="col-md-7">
+                    <h3>Another One.</h3>
+                    <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.<br> This Point commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                  </div>
+                  <div class="col-md-5">
+                    <img src="../images/img/2.jpg" width="250" height="250"/>
+                  </div>
+                  <a href="">Read more..</a>
                 </div>
-                <!--per slide wrapper4-->
-                <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#777"/></svg>
-                    <div class="container">
-                        <div class="carousel-caption text-right">
-                            <h1 style="color:black; font-size: 80px;font-weight: bold;font-family: cursive;">Miscelleneous Works</h1>
-                            <p style="font-size: 25px; font-style: italic;">IoT, Industry 4.0, Telecommunications Engineering, Mathematics,...</p>
-                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--wrapper for arrow "previous"-->
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <!--wrapper for arrow "next"-->
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
-
-
-      <!-- Marketing messaging and featurettes
-      ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
-
-        <div class="container marketing">
-            
-            <!-- START THE FEATURETTES -->
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-                    <p class="lead">Jasper ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                </div>
-                <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-                    <p class="lead">Mapalo ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                </div>
-                <div class="col-md-5 order-md-1">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-
-            <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-                    <p class="lead">Manu ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                </div>
-                <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-                </div>
-            </div>
-
-            <hr class="featurette-divider">
-            
-            <!-- /END THE FEATURETTES -->
-
-        </div><!-- /.container -->
-
-
-        <!-- FOOTER -->
-        <footer class="container">
-            <p class="float-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2020 Hatilima Industries &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        </footer>
-    </main>
+              </div>
+              <div class="col-md-2">
+                <ul>
+                  <li><a href="">2020, October</a></li>
+                  <li><a href="">2020, November</a></li>
+                  <li><a href="">2020, December</a></li>
+                </ul>
+              </div>
+          </div>
+          
+          <hr>
+          <!-- FOOTER -->
+          <footer class="container">
+              <p class="float-right"><a href="#">Back to top</a></p>
+              <p>&copy; 2020 Hatilima Industries &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+          </footer>
+      </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>

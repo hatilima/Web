@@ -1,0 +1,6 @@
+CC1350_tiny.jpeg:
+http://embeddedblog.blogspot.com/2016/09/
+
+
+STM32_3D.jpeg:
+https://hu.mouser.com/new/stmicroelectronics/stm32/

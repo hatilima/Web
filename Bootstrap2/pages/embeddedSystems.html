@@ -27,6 +27,7 @@
         </style>
         <!-- Custom styles for this template -->
         <link href="../carousel/carousel.css" rel="stylesheet">
+        <link href="../myCSS/myAnimations.css" rel="stylesheet">
   </head>
 
   <body>
@@ -76,48 +77,101 @@
 
     <main class="container">
         
-      <hr style="height:100px;border-width:0">
-        <!-- Three Rows -->
-        <div class="row">
+        <!-- <hr style="height:100px;border-width:0"> -->
+        <!-- Rows -->
+        <div class="row" style="margin-top: 100px;">
+          <h1 style="width: 100%; text-align: center; font-family: 'Times New Roman', Times, serif; color: midnightblue;">Embedded Systems</h1>
+        </div>
+        
+        <div class="row" style="margin-top: 30px;">
             <div class="col-md-10">
+              <!--Blog snippet 1: Choosing an MCU-->
+              <hr style="margin-top: 2px; margin-bottom: 40px; background-color: blue; height: 1px;">
               <div class="row">
                 <div class="col-md-7">
-                  <h3>Blog One.</h3>
-                  <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.<br> This Point commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                  <h3><a href="">Choosing microcontrollers: from 8-bit Arduino to 32-bit ARM Cortex-M chips.</a></h3>
+                  <p>Arduino simplifies prototyping, ARM Cortex M4 exhibits higher processing speeds and also provides additional 
+                    peripherals.<br> So how do we choose what controller to use for our embedded system project?</p>
+                    <a href="">Read more...</a>
                 </div>
                 <div class="col-md-5">
-                  <img src="../images/img/5.jpg" width="250" height="250"/>
+                  <div class="wrapping">
+                    <a href="">
+                      <img src="../images/ArduinoToARM.png"  class="image" width="250" height="250"/>
+                      <div class="overlay">
+                        <!-- <div class="text" style="color: green; font-weight: bold; font-size: 40px;">Choosing your MCU</div> -->
+                        <img src="../images/CC1350.jpg"  class="image" width="250" height="250"/>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-                <a href="" style="color: black;">Read more..</a>
+
+                <!-- <div class="col-md-5">
+                  <img src="../images/ArduinoToARM.png" width="250" height="250" style="transform:rotate(0deg)"/>
+                </div> -->
+                <!-- <a href="">Read more...</a> -->
               </div>
-              <hr/>
+              <hr style="margin-top: 30px; margin-bottom: 40px; background-color: blue; height: 1px;">
+              <!--Blog snippet 2: Blinking an LED six different ways: Arduino, STM32, Baremetal Atmega, Baremetal STM32, CC1350/CC1310!-->
               <div class="row">
                 <div class="col-md-7">
-                  <h3>First featurette heading. It’ll blow your mind.</h3>
-                  <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.<br> This Point commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                  <h3><a href="">Blinking an LED six different ways: Arduino, STM32, CC1310, CC1350.</a></h3>
+                  <p>LED blinking is a common "Hello World!" of embedded systems and it is a very good entry point to creating more complex embedded systems. In some 
+                    systems like Arduino, the implementation of LED blinking is very intuitive and comes with a 
+                    plethora of references. STM32, CC13x0 or bare metal Atmega programming require some different approaches and this article explores these 
+                    alternatives.<br> This guide is good for both absolute beginners and those who want to push beyond Arduino.</p>
+                    <a href="">Read more...</a>
                 </div>
                 <div class="col-md-5">
-                  <img src="../images/img/6.jpg" width="250" height="250"/>
+                  <div class="wrapping">
+                    <a href="">
+                      <img src="../images/LED_inside.png"  class="image" width="250" height="250"/>
+                      <div class="overlay">
+                        <div class="text">Hello World!</div>
+                        <img src="../images/LEDs.jpg"  class="image" width="250" height="250"/>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-                <a href="">Read more..</a>
+                <!-- <div class="col-md-5">
+                  <marquee scrollamount="10" direction="left" behavior="scroll">
+                    <img src="../images/img/6.jpg" width="250" height="250" alt="Blink"/>
+                  </marquee>
+                </div> -->
+                <!-- <a href="">Read more...</a> -->
               </div>
-              <hr>
+              <hr style="margin-top: 40px; margin-bottom: 40px; background-color: blue; height: 1px;">
+              <!--Blog snippet 3: 1602 LCD: A very simple introduction to displays-->
               <div class="row">
                 <div class="col-md-7">
-                  <h3>Another One.</h3>
-                  <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.<br> This Point commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+                  <h3><a href="">LCD 1602 - A Very Simple Introduction to Displays.</a></h3>
+                  <p>The user of the embedded system sometimes needs to see some readings from the system or some text 
+                    entries; and that is when displays become important. From LED displays, to OLED, there are some standards on how to send display signals.
+                    Of course some APIs are available for most displays, but sometimes knowing the underlying operational details of the display system
+                    can make a difference between displaying "olleH" and "Hello". This article breaks down the technical details of a 1602 dot matrix LCD 
+                    and how to drive it using
+                    Arduino and also bare metal Atmega328P.</p>
+                    <a href="">Read more...</a>
                 </div>
                 <div class="col-md-5">
-                  <img src="../images/img/2.jpg" width="250" height="250"/>
+                  <div class="wrapping">
+                    <a href="">
+                      <img src="../images/1602_LCD.jpg"  class="image" width="250" height="250"/>
+                      <div class="overlay">
+                        <div class="text" style="font-size: 40px; font-weight: bold; color: rgb(71, 12, 233);">Inside the LCD!</div>
+                        <img src="../images/5x8DotMatrix.jpg"  class="image" width="250" height="250"/>
+                      </div>
+                    </a>
+                  </div>
                 </div>
-                <a href="">Read more..</a>
+                <!-- <a href="">Read more...</a> -->
               </div>
             </div>
             <div class="col-md-2">
               <ul>
-                <li><a href="">October</a></li>
-                <li><a href="">November</a></li>
-                <li><a href="">December</a></li>
+                <li><a href="">2020, October</a></li>
+                <li><a href="">2020, November</a></li>
+                <li><a href="">2020, December</a></li>
               </ul>
             </div>
         </div>
