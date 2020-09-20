@@ -9,6 +9,19 @@
         <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
         <style>
+          .div_title
+            {
+                /* height: 400px; */
+                width: 100%;
+                /* background: gray; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: left;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -26,114 +39,176 @@
         </style>
         <!-- Custom styles for this template -->
         <link href="../carousel/carousel.css" rel="stylesheet">
+        <link href="../myCSS/myAnimations.css" rel="stylesheet">
   </head>
 
   <body>
-    <header>
+    <div class="row">
+        <header>
             
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div>
+                  <h1 style="color: white; text-align: left; font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;" class="mr-5 ml-4">HATILIMA</h1>
+                  <h1 style="color: white; text-align: left;font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;" class="mr-5 ml-4">Tech Blog</h1>
+                </div>
+
+                <div class="collapse navbar-collapse text-right" id="navbarCollapse" style="font-size: 15px;">
+                    <ul class="navbar-nav mr-4 ml-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="embeddedSystems.html">Embedded Systems</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="roboticsAndControl.html">Robotics & Control</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">AI & Computer Vision<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="miscelleneous.html">Miscelleneous Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactMe.html">Contact Me</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline mt-2 mt-md-0 ml-5">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
             
-            <div>
-                <h1 style="color: white; text-align: center;" class="mr-5 ml-4">Hatilima</h1>
-                <h2 style="color: white; text-align: center;" class="mr-5 ml-4">Tech Blog</h2>
-            </div>
-
-            <div class="collapse navbar-collapse text-right" id="navbarCollapse" style="font-size: 15px;">
-                <ul class="navbar-nav mr-4 ml-4">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="embeddedSystems.html">Embedded Systems</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="roboticsAndControl.html">Robotics & Control</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">AI & Computer Vision<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="miscelleneous.html">Miscelleneous Works</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contactMe.html">Contact Me</a>
-                    </li>
-                </ul>
-                <form class="form-inline mt-2 mt-md-0 ml-5">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
+            </nav>
         
-        </nav>
-    
-    </header>
+        </header>
+    </div>
 
-    <main class="container">
-        
-        <!-- <hr style="height:100px;border-width:0"> -->
-          <!-- Rows -->
-          <div class="row" style="margin-top: 100px;">
-            <h1 style="width: 100%; text-align: center; font-family: 'Times New Roman', Times, serif; color: midnightblue;">Artificial Intelligence & Computer Vision</h1>
-          </div>
-          <hr style="height: 5px;">
-          <div class="row" style="margin-top: 30px;">
-              <div class="col-md-10">
-                <div class="row">
-                  <div class="col-md-7">
-                    <h3>Blog One.</h3>
-                    <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.<br> This Point commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                  </div>
-                  <div class="col-md-5">
-                    <img src="../images/img/5.png" width="250" height="250"/>
-                  </div>
-                  <a href="" style="color: black;">Read more..</a>
-                </div>
-                <hr/>
-                <div class="row">
-                  <div class="col-md-7">
-                    <h3>First featurette heading. It’ll blow your mind.</h3>
-                    <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.<br> This Point commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                  </div>
-                  <div class="col-md-5">
-                    <img src="../images/img/6.jpg" width="250" height="250"/>
-                  </div>
-                  <a href="">Read more..</a>
-                </div>
-                <hr>
-                <div class="row">
-                  <div class="col-md-7">
-                    <h3>Another One.</h3>
-                    <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper.<br> This Point commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-                  </div>
-                  <div class="col-md-5">
-                    <img src="../images/img/2.jpg" width="250" height="250"/>
-                  </div>
-                  <a href="">Read more..</a>
-                </div>
+    <div class="row" style="margin-top: 100px; margin-left: auto; margin-right: auto; padding-left: 50px; padding-right: 50px;">
+        <div class="div_title">
+            <h1 style="font-weight: bold;">AI & Computer Vision</h1>
+        </div>
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-8 order-md-2">
+              <!--Blog snippet 1: Choosing an MCU-->
+              
+              <!-- <hr style="margin-top: 2px; margin-bottom: 40px; background-color: blue; height: 1px; width: 100%;"> -->
+              <div class="row">
+                <h4 style="padding-left: 15px;">Some commonly viewed articles:</h4>
               </div>
-              <div class="col-md-2">
+              <div class="row">
+                <p style="padding-left: 20px; color: green; font-style: italic;"> *Use search box for more or check "Quick Access List"</p>
+              </div>
+              <hr style="margin-top: 0;">
+              <div class="row">
+                <div class="col-md-8">
+                  <h3><a href="">Artificial Intelligence</a></h3>
+                  <p>What is artificial intellegence? What are the components of AI? How can one start AI as a hobby or a research area? This article 
+                    attempts to answer these questions as best as possible.
+                  </p>
+                    <a href="">Read more...</a>
+                </div>
+                <div class="col-md-4">
+                  <div class="wrapping">
+                    <a href="">
+                      <img src="../images/AI1.jpg"  class="image" width="250" height="250"/>
+                      <div class="overlay">
+                        <!-- <div class="text" style="color: green; font-weight: bold; font-size: 40px;">Choosing your MCU</div> -->
+                        <img src="../images/AI2.jpg"  class="image" width="250" height="250"/>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- <div class="col-md-5">
+                  <img src="../images/ArduinoToARM.png" width="250" height="250" style="transform:rotate(0deg)"/>
+                </div> -->
+                <!-- <a href="">Read more...</a> -->
+              </div>
+              <hr style="margin-top: 10px; margin-bottom: 40px; background-color: blue; height: 1px;">
+              <!--Blog snippet 2: Blinking an LED six different ways: Arduino, STM32, Baremetal Atmega, Baremetal STM32, CC1350/CC1310!-->
+              <div class="row">
+                <div class="col-md-8">
+                  <h3><a href="">Machine Learning - A Gental Introduction With Python</a></h3>
+                  <p>Linear regression is very intuitive. Bayes theorem is almost an everyday decision tool. Decision Trees probably brough you to this site.
+                    In this article, we will explore these and many other components of machine learning. We will use a ground-up approach by starting with classical
+                    ML techniques like linear regression in its simplest form and then gradually build up to more advanced concepts like Convolutional Neural Networks.
+                  </p>
+                    <a href="">Read more...</a>
+                </div>
+                <div class="col-md-4">
+                  <div class="wrapping">
+                    <a href="">
+                      <img src="../images/AI3.jpg"  class="image" width="250" height="250"/>
+                      <div class="overlay">
+                        <!-- <div class="text">Hello World!</div> -->
+                        <img src="../images/AI4.jpg"  class="image" width="250" height="250"/>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- <div class="col-md-5">
+                  <marquee scrollamount="10" direction="left" behavior="scroll">
+                    <img src="../images/img/6.jpg" width="250" height="250" alt="Blink"/>
+                  </marquee>
+                </div> -->
+                <!-- <a href="">Read more...</a> -->
+              </div>
+              <hr style="margin-top: 40px; margin-bottom: 40px; background-color: blue; height: 1px;">
+              <!--Blog snippet 3: 1602 LCD: A very simple introduction to displays-->
+              <div class="row">
+                <div class="col-md-8">
+                  <h3><a href="">AI - Applications, Threats, Geopolitics</a></h3>
+                  <p>Who is leading in the AI race? Is it Africa? Or is it still the classical tech-power structure of Russia vs USA/West?
+                    Is AI a threat or an aid to mankind?
+                    This article uses tech news and literature to explores these non-technical aspects of AI. The article further expresses some of the
+                    unequal investments into AI that can potentially create the next landscape for Geopolitics.
+                  </p>
+                    <a href="">Read more...</a>
+                </div>
+                <div class="col-md-4">
+                  <div class="wrapping">
+                    <a href="">
+                      <img src="../images/AI5.png"  class="image" width="250" height="250"/>
+                      <div class="overlay">
+                        <!-- <div class="text" style="font-size: 40px; font-weight: bold; color: rgb(71, 12, 233);">Inside the LCD!</div> -->
+                        <img src="../images/AI6.jpg"  class="image" width="250" height="250"/>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- <a href="">Read more...</a> -->
+              </div>
+            </div>
+            <div class="col-md-4 order-md-1" style="padding-left: 30px; padding-right: 40px;">
+              <div class="row">
+                <h4>Quick Access List:</h4>
+              </div>
+
+              <hr style="margin-top: 5px;">
+
+              <div class="row">
                 <ul>
-                  <li><a href="">2020, October</a></li>
+                  <li><a href="">2020, Octoberxxxx xxx xxxxxx  xxxxx xxxxx xxxxxxxxx xxx yyyyy cccc vvvv</a></li>
                   <li><a href="">2020, November</a></li>
                   <li><a href="">2020, December</a></li>
                 </ul>
-              </div>
-          </div>
-          
-          <hr>
-          <!-- FOOTER -->
-          <footer class="container">
-              <p class="float-right"><a href="#">Back to top</a></p>
-              <p>&copy; 2020 Hatilima Industries &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-          </footer>
-      </main>
+             </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- FOOTER -->
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2020 Hatilima Industries &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-  </body>
+</body>
 </html>

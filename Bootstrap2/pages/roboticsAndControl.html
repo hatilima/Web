@@ -9,6 +9,19 @@
         <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
         <style>
+          .div_title
+            {
+                /* height: 400px; */
+                width: 100%;
+                /* background: gray; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: left;
+                margin-left: auto;
+                margin-right: auto;
+                
+            }
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -30,76 +43,83 @@
   </head>
 
   <body>
-    <div>
-      <header>
-              
-          <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              
-              <div>
-                  <h1 style="color: white; text-align: center;" class="mr-5 ml-4">Hatilima</h1>
-                  <h2 style="color: white; text-align: center;" class="mr-5 ml-4">Tech Blog</h2>
-              </div>
+    <div class="row">
+        <header>
+            
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div>
+                    <h1 style="color: white; text-align: left; font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;" class="mr-5 ml-4">HATILIMA</h1>
+                    <h1 style="color: white; text-align: left;font-weight: bold; font-family: Georgia, 'Times New Roman', Times, serif;" class="mr-5 ml-4">Tech Blog</h1>
+                </div>
 
-              <div class="collapse navbar-collapse text-right" id="navbarCollapse" style="font-size: 15px;">
-                  <ul class="navbar-nav mr-4 ml-4">
-                      <li class="nav-item">
-                          <a class="nav-link" href="../index.html">Home </a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="embeddedSystems.html">Embedded Systems</a>
-                      </li>
-                      <li class="nav-item active">
-                          <a class="nav-link" href="#">Robotics & Control<span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="AI_CompVision.html">AI & Computer Vision</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="miscelleneous.html">Miscelleneous Works</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="contactMe.html">Contact Me</a>
-                      </li>
-                  </ul>
-                  <form class="form-inline mt-2 mt-md-0 ml-5">
-                      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form>
-              </div>
-          
-          </nav>
-      
-      </header>
-
-      <main class="container">
-          
-        <!-- <hr style="height:100px;border-width:0"> -->
-        <!-- Rows -->
-        <div class="row" style="margin-top: 100px;">
-          <h1 style="width: 100%; text-align: center; font-family: 'Times New Roman', Times, serif; color: midnightblue; background-color: blueviolet;">Robotics & Control</h1>
-        </div>
+                <div class="collapse navbar-collapse text-right" id="navbarCollapse" style="font-size: 15px;">
+                    <ul class="navbar-nav mr-4 ml-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="embeddedSystems.html">Embedded Systems</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Robotics & Control<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="AI_CompVision.html">AI & Computer Vision</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="miscelleneous.html">Miscelleneous Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contactMe.html">Contact Me</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline mt-2 mt-md-0 ml-5">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            
+            </nav>
         
+        </header>
+    </div>
+
+    <div class="row" style="margin-top: 100px; margin-left: auto; margin-right: auto; padding-left: 50px; padding-right: 50px;">
+        <div class="div_title">
+            <h1 style="font-weight: bold;">Robotics & Control</h1>
+        </div>
         <div class="row" style="margin-top: 30px;">
-            <div class="col-md-10">
+            <div class="col-md-8 order-md-2">
               <!--Blog snippet 1: Choosing an MCU-->
-              <hr style="margin-top: 2px; margin-bottom: 40px; background-color: blue; height: 1px;">
+              
+              <!-- <hr style="margin-top: 2px; margin-bottom: 40px; background-color: blue; height: 1px; width: 100%;"> -->
               <div class="row">
-                <div class="col-md-7">
-                  <h3><a href="">Choosing microcontrollers: from 8-bit Arduino to 32-bit ARM Cortex-M chips.</a></h3>
-                  <p>Arduino simplifies prototyping, ARM Cortex M4 exhibits higher processing speeds and also provides additional 
-                    peripherals.<br> So how do we choose what controller to use for our embedded system project?</p>
+                <h4 style="padding-left: 15px;">Some commonly viewed articles:</h4>
+              </div>
+              <div class="row">
+                <p style="padding-left: 20px; color: green; font-style: italic;"> *Use search box for more or check "Quick Access List"</p>
+              </div>
+              <hr style="margin-top: 0;">
+              <div class="row">
+                <div class="col-md-8">
+                  <h3><a href="">Construction of a Self-Balancing Robot - The Amama Robot</a></h3>
+                  <p style="color: black;">From start to finish, this article will show you how to build a self-balancing robot. With the three main parts of robot building
+                    being electronics, control, mechanical structures, this article will mainly focus on the first two but will still give self-contained
+                    pointers on how to have the correct mechanical structures in place.
+                  </p>
                     <a href="">Read more...</a>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-4">
                   <div class="wrapping">
                     <a href="">
-                      <img src="../images/ArduinoToARM.png"  class="image" width="250" height="250"/>
+                      <img src="../images/SelfBalancing.jpg"  class="image" width="250" height="250"/>
                       <div class="overlay">
                         <!-- <div class="text" style="color: green; font-weight: bold; font-size: 40px;">Choosing your MCU</div> -->
-                        <img src="../images/CC1350.jpg"  class="image" width="250" height="250"/>
+                        <img src="../images/RobotPic1.jpg"  class="image" width="250" height="250"/>
                       </div>
                     </a>
                   </div>
@@ -110,24 +130,24 @@
                 </div> -->
                 <!-- <a href="">Read more...</a> -->
               </div>
-              <hr style="margin-top: 30px; margin-bottom: 40px; background-color: blue; height: 1px;">
+              <hr style="margin-top: 10px; margin-bottom: 40px; background-color: blue; height: 1px;">
               <!--Blog snippet 2: Blinking an LED six different ways: Arduino, STM32, Baremetal Atmega, Baremetal STM32, CC1350/CC1310!-->
               <div class="row">
-                <div class="col-md-7">
-                  <h3><a href="">Blinking an LED six different ways: Arduino, STM32, CC1310, CC1350.</a></h3>
-                  <p>LED blinking is a common "Hello World!" of embedded systems and it is a very good entry point to creating more complex embedded systems. In some 
-                    systems like Arduino, the implementation of LED blinking is very intuitive and comes with a 
-                    plethora of references. STM32, CC13x0 or bare metal Atmega programming require some different approaches and this article explores these 
-                    alternatives.<br> This guide is good for both absolute beginners and those who want to push beyond Arduino.</p>
+                <div class="col-md-8">
+                  <h3><a href="">Robotics - Key Areas, Terms, Examples and Tools for Beginners.</a></h3>
+                  <p>From mass production in first industrial revolution to delivery robots in fourth industrial revolution or Covid19 times, it is very visible
+                    even to non-roboticists that there has been a massive shift in robotics and autonomous systems; a shift towards both complex capabilities and ubiquity of robots.
+                    This article presents the road that robotics has taken from the early days to 2020...the interesting year in human history.
+                  </p>
                     <a href="">Read more...</a>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-4">
                   <div class="wrapping">
                     <a href="">
-                      <img src="../images/LED_inside.png"  class="image" width="250" height="250"/>
+                      <img src="../images/robotics2.png"  class="image" width="250" height="250"/>
                       <div class="overlay">
-                        <div class="text">Hello World!</div>
-                        <img src="../images/LEDs.jpg"  class="image" width="250" height="250"/>
+                        <!-- <div class="text">Hello World!</div> -->
+                        <img src="../images/robotics5.jpg"  class="image" width="250" height="250"/>
                       </div>
                     </a>
                   </div>
@@ -142,23 +162,21 @@
               <hr style="margin-top: 40px; margin-bottom: 40px; background-color: blue; height: 1px;">
               <!--Blog snippet 3: 1602 LCD: A very simple introduction to displays-->
               <div class="row">
-                <div class="col-md-7">
-                  <h3><a href="">LCD 1602 - A Very Simple Introduction to Displays.</a></h3>
-                  <p>The user of the embedded system sometimes needs to see some readings from the system or some text 
-                    entries; and that is when displays become important. From LED displays, to OLED, there are some standards on how to send display signals.
-                    Of course some APIs are available for most displays, but sometimes knowing the underlying operational details of the display system
-                    can make a difference between displaying "olleH" and "Hello". This article breaks down the technical details of a 1602 dot matrix LCD 
-                    and how to drive it using
-                    Arduino and also bare metal Atmega328P.</p>
+                <div class="col-md-8">
+                  <h3><a href="">The Evolution of Robotics and Recent Advances</a></h3>
+                  <p>From mass production in first industrial revolution to delivery robots in fourth industrial revolution or Covid19 times, it is very visible
+                    even to non-roboticists that there has been a massive shift in robotics and autonomous systems; a shift towards both complex capabilities and ubiquity of robots.
+                    This article presents the road that robotics has taken from the early days to 2020...the interesting year in human history.
+                  </p>
                     <a href="">Read more...</a>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-4">
                   <div class="wrapping">
                     <a href="">
-                      <img src="../images/1602_LCD.jpg"  class="image" width="250" height="250"/>
+                      <img src="../images/robotics3.png"  class="image" width="250" height="250"/>
                       <div class="overlay">
-                        <div class="text" style="font-size: 40px; font-weight: bold; color: rgb(71, 12, 233);">Inside the LCD!</div>
-                        <img src="../images/5x8DotMatrix.jpg"  class="image" width="250" height="250"/>
+                        <!-- <div class="text" style="font-size: 40px; font-weight: bold; color: rgb(71, 12, 233);">Inside the LCD!</div> -->
+                        <img src="../images/robotics4.jpg"  class="image" width="250" height="250"/>
                       </div>
                     </a>
                   </div>
@@ -166,26 +184,31 @@
                 <!-- <a href="">Read more...</a> -->
               </div>
             </div>
-            <div class="col-md-2">
-              <ul>
-                <li><a href="">2020, October</a></li>
-                <li><a href="">2020, November</a></li>
-                <li><a href="">2020, December</a></li>
-              </ul>
+            <div class="col-md-4 order-md-1" style="padding-left: 30px; padding-right: 40px;">
+              <div class="row">
+                <h4>Quick Access List:</h4>
+              </div>
+
+              <hr style="margin-top: 5px;">
+
+              <div class="row">
+                <ul>
+                  <li><a href="">2020, Octoberxxxx xxx xxxxxx  xxxxx xxxxx xxxxxxxxx xxx yyyyy cccc vvvv</a></li>
+                  <li><a href="">2020, November</a></li>
+                  <li><a href="">2020, December</a></li>
+                </ul>
+             </div>
             </div>
         </div>
-        
-        <hr>
-        <!-- FOOTER -->
-        <footer class="container">
-            <p class="float-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2020 Hatilima Industries &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        </footer>
-      </main>
     </div>
+    <hr>
+    <!-- FOOTER -->
+    <footer class="container">
+        <p class="float-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2020 Hatilima Industries &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
-  </body>
+</body>
 </html>
