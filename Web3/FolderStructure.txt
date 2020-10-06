@@ -1,0 +1,5 @@
+Hatilima:
+hit(www.hit.com or hatilima.com)/(greenlife, realEstate, Education, AiConsult, AutomationConsult, Contact)
+	Blog(www.hatilimablog.com or hatilima.com/blog)/(Embedded, Robotics, AI, Misc, Contact)
+	portfolio(www.hatilima.com or hatilima.com/skills)/(Skills&Experience: (Tech, Languages, Social:leadership+creativity+flexibility), Education, Hobbies/Family/Life)
+	
